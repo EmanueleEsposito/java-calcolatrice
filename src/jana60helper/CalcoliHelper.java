@@ -28,12 +28,12 @@ public class CalcoliHelper {
 	}
 
 	// Metodo moltiplicazione di due numeri interi
-	public static int moltiplicazionneNumeri(int numero1, int numero2) {
+	public static int moltiplicazioneNumeri(int numero1, int numero2) {
 		return numero1 * numero2;
 	}
 
 	// Overload metodo prodotto
-	public static double moltiplicazionneNumeri(double numero1, double numero2) {
+	public static double moltiplicazioneNumeri(double numero1, double numero2) {
 		return numero1 * numero2;
 	}
 
@@ -93,5 +93,21 @@ public class CalcoliHelper {
 			return numeroMassimoDecimale = numero2;
 		}
 		return numeroMassimoDecimale;
+	}
+
+	// Metodo per l'elevamento alla potenza
+	public static int CalcoloPotenza(int base, int esponente) {
+		int potenza = 1;
+		if (base > 0 && esponente == 0) {
+			return potenza;
+		} else if (base == 0 && esponente >= 0) {
+			return 0;
+		} else {
+			for (int i = 1; i <= esponente; i++) {
+				potenza = potenza * base;
+			}
+			return potenza;
+		}
+
 	}
 }

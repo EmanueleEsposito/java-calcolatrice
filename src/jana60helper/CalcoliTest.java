@@ -10,7 +10,7 @@ public class CalcoliTest {
 		System.out.println("La differenza è = " + CalcoliHelper.differenzaNumeri(100, 25));
 
 		// Test Moltiplicazione di due numeri interi
-		System.out.println("Il prodotto è = " + CalcoliHelper.moltiplicazionneNumeri(5, 27));
+		System.out.println("Il prodotto è = " + CalcoliHelper.moltiplicazioneNumeri(5, 27));
 
 		// Test Valore assoluto di un numero intero
 		System.out.println("Il valore assoluto è = " + CalcoliHelper.valoreAssolutoNumero(-150));
@@ -20,6 +20,8 @@ public class CalcoliTest {
 
 		// Test Massimo tra due numeri interi
 		System.out.println("Il massimo è = " + CalcoliHelper.massimoNumeri(-150, -125));
+		// Test elevazione alla potenza
+		System.out.println("Il risultato dell'elelazione alla potenza è= " + CalcoliHelper.CalcoloPotenza(2, 8));
 	}
 
 }
