@@ -8,41 +8,71 @@ public class CalcoliHelper {
 
 	// Metodi static
 	// Metodo calcolo somma di due numeri interi
-	public static int sommaNumeriInteri(int numero1, int numero2) {
+	public static int sommaNumeri(int numero1, int numero2) {
+		return numero1 + numero2;
+	}
+
+	// Overload del metodo somma
+	public static double sommaNumeri(double numero1, double numero2) {
 		return numero1 + numero2;
 	}
 
 	// Metodo differenza tra due numeri interi
-	public static int differenzaNumeriInter(int numero1, int numero2) {
+	public static int differenzaNumeri(int numero1, int numero2) {
+		return numero1 - numero2;
+	}
+
+	// Overload metodo differenza
+	public static double differenzaNumeri(double numero1, double numero2) {
 		return numero1 - numero2;
 	}
 
 	// Metodo moltiplicazione di due numeri interi
-	public static int moltiplicazionneNumeriInteri(int numero1, int numero2) {
+	public static int moltiplicazionneNumeri(int numero1, int numero2) {
+		return numero1 * numero2;
+	}
+
+	// Overload metodo prodotto
+	public static double moltiplicazionneNumeri(double numero1, double numero2) {
 		return numero1 * numero2;
 	}
 
 	// Metodo valore assoluto di un numero intero
-	public static int valoreAssolutoNumeroIntero(int numeroInt) {
+	public static int valoreAssolutoNumero(int numeroInt) {
 		return (numeroInt < 0) ? -numeroInt : numeroInt;
 	}
 
+	// Overload metodo valore assoluto
+	public static double valoreAssolutoNumero(double numeroDecimale) {
+		return (numeroDecimale < 0) ? -numeroDecimale : numeroDecimale;
+	}
+
 	// Metodo minimo tra due numeri interi
-	public static int minimoNumeriIntero(int numero1, int numero2) {
+	public static int minimoNumeri(int numero1, int numero2) {
 		int numeroMinimo = 0;
 		if (numero1 < numero2) {
 			return numeroMinimo = numero1;
 		} else if (numero2 < numero1) {
 			return numeroMinimo = numero2;
-		} else
-			numeroMinimo = 0;
+		}
 		return numeroMinimo;
+	}
+
+	// Overload metodo minimo
+	public static double minimoNumeri(double numero1, double numero2) {
+		double numeroMinimoDecimale = 0.0;
+		if (numero1 < numero2) {
+			return numeroMinimoDecimale = numero1;
+		} else if (numero2 < numero1) {
+			return numeroMinimoDecimale = numero2;
+		}
+		return numeroMinimoDecimale;
 	}
 
 	// Metodo massimo tra due numeri interi
 	int numeroMassimo = 0;
 
-	public static int massimoNumeriIntero(int numero1, int numero2) {
+	public static int massimoNumeri(int numero1, int numero2) {
 		int numeroMassimo = 0;
 		if (numero1 > numero2) {
 			return numeroMassimo = numero1;
@@ -50,5 +80,18 @@ public class CalcoliHelper {
 			return numeroMassimo = numero2;
 		}
 		return numeroMassimo;
+	}
+
+	// Overload metodo massimo
+	int numeroMassimoDecimale = 0;
+
+	public static double massimoNumeri(double numero1, double numero2) {
+		double numeroMassimoDecimale = 0.0;
+		if (numero1 > numero2) {
+			return numeroMassimoDecimale = numero1;
+		} else if (numero2 > numero1) {
+			return numeroMassimoDecimale = numero2;
+		}
+		return numeroMassimoDecimale;
 	}
 }
